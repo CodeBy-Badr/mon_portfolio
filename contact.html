@@ -45,24 +45,24 @@
                 <!-- Contact Form -->
                 <div class="contact-form-wrapper" data-aos="fade-right">
                     <h2>Envoyez-Moi un Message</h2>
-                    <form class="contact-form" id="contactForm">
+                    <form class="contact-form" action="send.php" id="contactForm">
                         <div class="form-group">
-                            <input type="text" placeholder="Votre Nom" required id="name">
+                            <input type="text" placeholder="Votre Nom" name="name" required id="name">
                         </div>
 
                         <div class="form-group">
-                            <input type="email" placeholder="Votre Email" required id="email">
+                            <input type="email" placeholder="Votre Email" name="email" required id="email">
                         </div>
 
                         <div class="form-group">
-                            <input type="text" placeholder="Sujet" required id="subject">
+                            <input type="text" placeholder="Sujet" name="subject" required id="subject">
                         </div>
 
                         <div class="form-group">
                             <textarea placeholder="Votre Message" rows="6" required id="message"></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Envoyer le Message</button>
+                        <button type="submit" name="submit" class="btn btn-primary">Envoyer le Message</button>
                     </form>
                 </div>
 
