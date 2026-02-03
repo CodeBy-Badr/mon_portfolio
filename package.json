@@ -15,5 +15,8 @@
   "scripts": {
     "start": "http-server",
     "dev": "http-server -p 8000"
+  },
+  "dependencies": {
+    "nodemailer": "^7.0.13"
   }
 }

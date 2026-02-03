@@ -224,5 +224,37 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="js/script.js"></script>
+    <script>
+document.getElementById('contactForm').addEventListener('submit', async (e) => {
+    e.preventDefault(); // Bach l-page mat-rechargach
+
+    // Jam3 l-ma3loumat men l-form
+    const data = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        subject: document.getElementById('subject').value,
+        message: document.getElementById('message').value
+    };
+
+    // Hadu hwa l-code li sweltini 3lih
+    try {
+        const response = await fetch('/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data),
+        });
+        
+        if (response.ok) {
+            alert("Tsift b naja7!");
+            document.getElementById('contactForm').reset(); // Khwui l-form
+        } else {
+            alert("Mouchkil f l-irsal.");
+        }
+    } catch (error) {
+        console.error("Error:", error);
+        alert("Kayn chi khata2 f l-connexion.");
+    }
+});
+</script>
 </body>
 </html>
