@@ -1,0 +1,448 @@
+<!-- 
+    PORTFOLIO REUSABLE COMPONENTS
+    Ce fichier contient des extraits de code réutilisables pour votre portfolio
+-->
+
+<!-- ===========================
+     COMPONENT: SKILL CARD
+     ========================= -->
+<div class="skill-card" data-aos="zoom-in">
+    <div class="skill-icon">
+        <i class="fas fa-code"></i>
+    </div>
+    <h3>Skill Name</h3>
+    <p>Skill description and details about your expertise</p>
+</div>
+
+
+<!-- ===========================
+     COMPONENT: PROJECT CARD (Grid)
+     ========================= -->
+<div class="project-card">
+    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+        <div class="project-overlay">
+            <a href="#" class="btn btn-small">View More</a>
+        </div>
+    </div>
+    <div class="project-content">
+        <h3>Project Name</h3>
+        <p>Brief description of the project and what makes it unique.</p>
+        <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+        </div>
+    </div>
+</div>
+
+
+<!-- ===========================
+     COMPONENT: SERVICE CARD
+     ========================= -->
+<div class="service-card" data-aos="zoom-in">
+    <div class="service-icon">
+        <i class="fas fa-laptop-code"></i>
+    </div>
+    <h3>Service Name</h3>
+    <p>Detailed description of what this service includes and benefits.</p>
+    <ul class="service-features">
+        <li><i class="fas fa-check"></i> Feature 1</li>
+        <li><i class="fas fa-check"></i> Feature 2</li>
+        <li><i class="fas fa-check"></i> Feature 3</li>
+    </ul>
+</div>
+
+
+<!-- ===========================
+     COMPONENT: TIMELINE ITEM
+     ========================= -->
+<div class="timeline-item" data-aos="fade-up">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+        <h3>Year - Event Title</h3>
+        <p>Description of the event or milestone in your journey.</p>
+    </div>
+</div>
+
+
+<!-- ===========================
+     COMPONENT: STAT CARD
+     ========================= -->
+<div class="stat-card" data-aos="count-up">
+    <h3 class="stat-number">15+</h3>
+    <p class="stat-label">Projects Completed</p>
+</div>
+
+
+<!-- ===========================
+     COMPONENT: FAQ ITEM
+     ========================= -->
+<div class="faq-item">
+    <div class="faq-question">
+        <h4>Question Title</h4>
+        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+    </div>
+    <div class="faq-answer">
+        <p>Answer to the question with detailed explanation.</p>
+    </div>
+</div>
+
+
+<!-- ===========================
+     COMPONENT: CONTACT INFO ITEM
+     ========================= -->
+<div class="contact-info-item">
+    <div class="info-icon">
+        <i class="fas fa-envelope"></i>
+    </div>
+    <div class="info-content">
+        <h4>Email</h4>
+        <p><a href="mailto:email@example.com">email@example.com</a></p>
+    </div>
+</div>
+
+
+<!-- ===========================
+     COMPONENT: FORM INPUT
+     ========================= -->
+<div class="form-group">
+    <input type="text" placeholder="Your Name" required>
+</div>
+
+<div class="form-group">
+    <input type="email" placeholder="Your Email" required>
+</div>
+
+<div class="form-group">
+    <textarea placeholder="Your Message" rows="6" required></textarea>
+</div>
+
+
+<!-- ===========================
+     COMPONENT: HERO SECTION
+     ========================= -->
+<section class="hero">
+    <div class="container hero-container">
+        <div class="hero-content" data-aos="fade-up">
+            <h1 class="hero-title">
+                Your Main Heading with <span class="highlight">Highlighted Text</span>
+            </h1>
+            <p class="hero-subtitle">
+                Your subtitle or brief description goes here.
+            </p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary">Primary Button</a>
+                <a href="#" class="btn btn-secondary">Secondary Button</a>
+            </div>
+        </div>
+        <div class="hero-image" data-aos="fade-left">
+            <!-- Add your hero image or illustration here -->
+        </div>
+    </div>
+</section>
+
+
+<!-- ===========================
+     COMPONENT: SECTION WITH TITLE
+     ========================= -->
+<section class="services-section">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Section Title</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+            Description of what this section is about
+        </p>
+        <!-- Add your content here -->
+    </div>
+</section>
+
+
+<!-- ===========================
+     COMPONENT: SKILL WITH PROGRESS BAR
+     ========================= -->
+<div class="skill-item">
+    <span>Skill Name</span>
+    <div class="progress-bar">
+        <div class="progress" style="width: 85%"></div>
+    </div>
+</div>
+
+
+<!-- ===========================
+     COMPONENT: SOCIAL LINKS
+     ========================= -->
+<div class="social-links">
+    <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
+</div>
+
+
+<!-- ===========================
+     COMPONENT: CTA SECTION
+     ========================= -->
+<section class="cta-section">
+    <div class="container cta-container" data-aos="zoom-in">
+        <h2>Ready to Start Your Project?</h2>
+        <p>Contact me today to discuss your ideas and bring them to life.</p>
+        <a href="#contact" class="btn btn-white">Get In Touch</a>
+    </div>
+</section>
+
+
+<!-- ===========================
+     CSS: CUSTOM BUTTON STYLES
+     ========================= -->
+<style>
+/* Additional button variants */
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-outline:hover {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-lg {
+    padding: 16px 40px;
+    font-size: 1.1rem;
+}
+
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Gradient button with animation */
+.btn-gradient {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: var(--white);
+}
+
+.btn-gradient:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+</style>
+
+
+<!-- ===========================
+     JS: UTILITY FUNCTIONS
+     ========================= -->
+<script>
+// Smooth scroll to element
+function scrollToElement(selector) {
+    const element = document.querySelector(selector);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+// Add active class to current nav link
+function setActiveNavLink(url) {
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.remove('active');
+        if (link.href === url) {
+            link.classList.add('active');
+        }
+    });
+}
+
+// Debounce function for performance
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+
+// Check if element is in viewport
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= window.innerHeight &&
+        rect.right <= window.innerWidth
+    );
+}
+
+// Format date
+function formatDate(date) {
+    return new Date(date).toLocaleDateString('fr-FR', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+}
+
+// Copy to clipboard
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(() => {
+        showNotification('Copied to clipboard!', 'success');
+    });
+}
+
+// Get query parameter
+function getQueryParam(param) {
+    const searchParams = new URLSearchParams(window.location.search);
+    return searchParams.get(param);
+}
+
+// Validate email
+function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+}
+
+// Validate phone
+function validatePhone(phone) {
+    const re = /^[\d\s\-\+\(\)]{10,}$/;
+    return re.test(phone);
+}
+
+// Track event (with Google Analytics)
+function trackEvent(eventName, eventData) {
+    if (typeof gtag !== 'undefined') {
+        gtag('event', eventName, eventData);
+    }
+}
+</script>
+
+
+<!-- ===========================
+     RESPONSIVE BREAKPOINTS
+     ========================= -->
+<style>
+/* 
+   Responsive Design Breakpoints:
+   
+   Mobile:  < 480px
+   Tablet:  480px - 768px
+   Desktop: > 768px
+   Large:   > 1024px
+   
+   Usage:
+   @media (max-width: 768px) {
+       /* Tablet and below styles */
+
+*/
+
+@media (max-width: 480px) {
+    /* Small mobile phones */
+}
+
+@media (max-width: 768px) {
+    /* Tablets and small phones */
+}
+
+@media (min-width: 769px) {
+    /* Desktops and larger */
+}
+
+@media (min-width: 1024px) {
+    /* Large desktops */
+}
+
+@media (min-width: 1440px) {
+    /* Very large screens */
+}
+
+/* Print styles */
+@media print {
+    .navbar, .footer, .cta-section {
+        display: none;
+    }
+}
+</style>
+
+
+<!-- ===========================
+     ANIMATION PRESETS
+     ========================= -->
+<!-- 
+Use these data-aos attributes for different animations:
+
+Fade:
+- data-aos="fade-up"
+- data-aos="fade-down"
+- data-aos="fade-left"
+- data-aos="fade-right"
+- data-aos="fade-up-left"
+- data-aos="fade-up-right"
+- data-aos="fade-down-left"
+- data-aos="fade-down-right"
+
+Flip:
+- data-aos="flip-up"
+- data-aos="flip-left"
+
+Zoom:
+- data-aos="zoom-in"
+- data-aos="zoom-in-up"
+- data-aos="zoom-in-down"
+- data-aos="zoom-in-left"
+- data-aos="zoom-in-right"
+
+Bounce:
+- data-aos="bounce-in"
+- data-aos="bounce-in-up"
+- data-aos="bounce-in-down"
+- data-aos="bounce-in-left"
+- data-aos="bounce-in-right"
+
+Slide:
+- data-aos="slide-up"
+- data-aos="slide-down"
+- data-aos="slide-left"
+- data-aos="slide-right"
+
+Modifiers:
+- data-aos-duration="800" (animation duration in ms)
+- data-aos-delay="200" (delay before animation in ms)
+- data-aos-offset="100" (trigger offset from viewport)
+- data-aos-easing="ease-in-out"
+- data-aos-once="true" (animation only triggers once)
+
+Example:
+<div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+    Content
+</div>
+-->
+
+
+<!-- ===========================
+     COLOR PALETTE REFERENCE
+     ========================= -->
+<!-- 
+Primary Colors:
+- Primary: #667eea (Blue-purple)
+- Secondary: #764ba2 (Purple)
+
+Neutrals:
+- White: #ffffff
+- Light BG: #f8f9fa
+- Dark BG: #111111
+- Text: #1a1a1a
+- Text Light: #666666
+- Border: #e0e0e0
+
+Gradients:
+- Primary Gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%)
+- Rainbow: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f5576c 100%)
+
+Shadows:
+- Light: 0 10px 30px rgba(0, 0, 0, 0.1)
+- Medium: 0 20px 50px rgba(0, 0, 0, 0.15)
+- Heavy: 0 30px 80px rgba(0, 0, 0, 0.2)
+-->

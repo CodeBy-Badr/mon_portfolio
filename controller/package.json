@@ -1,0 +1,22 @@
+{
+  "name": "badr-eddine-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio professionnel d'un développeur Full-Stack",
+  "author": "Badr Eddine",
+  "type": "module",
+  "keywords": [
+    "portfolio",
+    "web-developer",
+    "full-stack",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "scripts": {
+    "start": "http-server",
+    "dev": "http-server -p 8000"
+  },
+  "dependencies": {
+    "nodemailer": "^7.0.13"
+  }
+}
